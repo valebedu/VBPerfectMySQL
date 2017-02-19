@@ -6,6 +6,11 @@
 //
 //
 
+/**
+ `Error` enum used to represent error cases throwns by `VabeStoreMySQL` class and extended classes.
+ 
+ - authors: Valentin Bercot
+ */
 public enum VabeStoreMySQLError: Error
 {
     case cannotConnect(code: UInt32, message: String)
