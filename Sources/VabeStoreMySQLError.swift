@@ -7,7 +7,7 @@
 //
 
 /**
- `Error` enum used to represent error cases throwns by `VabeStoreMySQL` class and extended classes.
+ `Error` enum used to represent error cases throw by `VabeStoreMySQL` class and extended classes.
  
  - authors: Valentin Bercot
  */
