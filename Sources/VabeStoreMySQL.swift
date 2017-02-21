@@ -14,7 +14,7 @@ import MySQL
  
  - authors: Valentin Bercot
  */
-public class VabeStoreMySQL
+open class VabeStoreMySQL
 {
     /**
      MySQL instance, this instance should be used to make MySQL querries.
