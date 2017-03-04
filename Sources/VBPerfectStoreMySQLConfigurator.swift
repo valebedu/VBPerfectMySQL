@@ -1,17 +1,17 @@
 //
-//  VabeStoreMySQLConfigurator.swift
-//  VabeMySQL
+//  VBPerfectStoreMySQLConfigurator.swift
+//  VBPerfectMySQL
 //
 //  Created by Valentin Bercot on 14/02/2017.
 //
 //
 
 /**
- Configurator used to initialize a `VabeStoreMySQL`.
+ Configurator used to initialize a `VBPerfectStoreMySQL`.
  
  - authors: Valentin Bercot
  */
-public struct VabeStoreMySQLConfigurator
+public struct VBPerfectStoreMySQLConfigurator
 {
     /**
      MySQL host.

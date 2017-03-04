@@ -1,6 +1,6 @@
 //
 //  Package.swift
-//  VabeMySQL
+//  VBPerfectMySQL
 //
 //  Created by Valentin Bercot on 14/02/2017.
 //
@@ -9,10 +9,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "VabeMySQL",
+    name: "VBPerfectMySQL",
     targets: [
         Target(
-            name: "VabeMySQL",
+            name: "VBPerfectMySQL",
             dependencies: []
         )
     ],
