@@ -1,15 +1,15 @@
 //
-//  VabeMySQLTests.swift
-//  VabeMySQL
+//  VBPerfectMySQLTests.swift
+//  VBPerfectMySQL
 //
 //  Created by Valentin Bercot on 14/02/2017.
 //
 //
 
 import XCTest
-@testable import VabeMySQL
+@testable import VBPerfectMySQL
 
-class VabeMySQLTests: XCTestCase
+class VBPerfectMySQLTests: XCTestCase
 {
     func testExample()
     {
@@ -20,7 +20,7 @@ class VabeMySQLTests: XCTestCase
         XCTAssertEqual(text, "Hello, World!")
     }
     
-    static var allTests : [(String, (VabeMySQLTests) -> () throws -> Void)]
+    static var allTests : [(String, (VBPerfectMySQLTests) -> () throws -> Void)]
     {
         return [
             ("testExample", testExample)

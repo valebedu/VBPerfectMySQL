@@ -1,6 +1,6 @@
 //
-//  VabeStoreMySQL.swift
-//  VabeMySQL
+//  VBPerfectStoreMySQL.swift
+//  VBPerfectMySQL
 //
 //  Created by Valentin Bercot on 14/02/2017.
 //
@@ -10,11 +10,11 @@ import Foundation
 import MySQL
 
 /**
- `VabeStoreMySQL` class help a MySQL store class by adding the common logic about initializing and deinitializing the connection to MySQL database. This class should be extended in order to be used properly.
+ `VBPerfectStoreMySQL` class help a MySQL store class by adding the common logic about initializing and deinitializing the connection to MySQL database. This class should be extended in order to be used properly.
  
  - authors: Valentin Bercot
  */
-open class VabeStoreMySQL
+open class VBPerfectStoreMySQL
 {
     /**
      MySQL instance, this instance should be used to make MySQL querries.
@@ -41,12 +41,12 @@ open class VabeStoreMySQL
         
         guard connected else
         {
-            throw VabeStoreMySQLError.cannotConnect(code: mySql.errorCode(), message: mySql.errorMessage())
+            throw VBPerfectStoreMySQLError.cannotConnect(code: mySql.errorCode(), message: mySql.errorMessage())
         }
         
         guard mySql.selectDatabase(named: database) else
         {
-            throw VabeStoreMySQLError.cannotSelectDatabase(code: mySql.errorCode(), message: mySql.errorMessage())
+            throw VBPerfectStoreMySQLError.cannotSelectDatabase(code: mySql.errorCode(), message: mySql.errorMessage())
         }
         
         dateFormatter = DateFormatter()
@@ -63,7 +63,7 @@ open class VabeStoreMySQL
      - parameters:
        -configurator: the MySQL configurator with host, user, password and database.
      */
-    public convenience init(configurator: VabeStoreMySQLConfigurator) throws
+    public convenience init(configurator: VBPerfectStoreMySQLConfigurator) throws
     {
         do
         {
